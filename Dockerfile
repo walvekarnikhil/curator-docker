@@ -2,6 +2,7 @@ FROM gliderlabs/alpine:3.2
 
 ENV CURATOR_VERSION 3.4.0
 ENV ELASTICSEARCH_PORT 9200
+ENV INDICES_PREFIX logstash
 
 RUN apk --update add python py-pip bash && pip install elasticsearch-curator==$CURATOR_VERSION
 
