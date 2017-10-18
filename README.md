@@ -8,6 +8,11 @@ The list of tasks currently are:
 
 `ELASTICSEARCH_HOST` - The hostname or IP address of an elasticsearch cluster.
 
+`ELASTICSEARCH_PORT` - The port of an elasticsearch cluster.
+
 `INDICES_PREFIXES` - Prefixes of indices to optimize/purge, space separted. Defaults to "logstash"
 
 `MAX_INDEX_AGE` - The maximum age (in days) a logstash index can be until it is deleted.
+
+`USE_SSL` - Whether to use SSL or not.
+
