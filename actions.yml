@@ -1,0 +1,14 @@
+actions:
+  1:
+    action: delete_indices
+    description: Purge old indexes
+    filters:
+    - filtertype: age
+      source: name
+      direction: older
+      timestring: '%Y.%m.%d'
+      unit: days
+      unit_count: ${MAX_INDEX_AGE}
+    - filtertype: pattern
+      kind: prefix
+      value: ${INDICES_PREFIXES}
